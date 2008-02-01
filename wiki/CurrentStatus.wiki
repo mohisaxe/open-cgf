@@ -1,0 +1,33 @@
+#summary Status of Project
+
+= Introduction =
+
+As at Feb 2008 this project is under active development. It requires testing with real live CDFs (SGSN/GGSNs) and I cannot do this.
+
+If you'd like to use this in your (test) network, please do so, and send any questions or feedback to feedback@3gtelcotools.com or raise an issue here.
+
+This server will eventually be production grade, but I wouldn't recommend it for that yet...
+
+= TODO =
+
+Things to do rough priority order
+
+  * Make logging server log to disk
+  * Make server reply to echo and node_alive requests
+  * Make logging multi-process 
+  * Make server respond to CDF (SGSN/GGSN) with data_record_transfer_response periodically, which should make it very efficient. Response should be tied to physical disk logging or file closing (TBD)
+  * Make TCP server work, for GTPv0 clients who like TCP. Sad little things.
+  * Enhance test program for TCP
+  * Enhance test program to simulate failures/failovers
+  * Exercise and debug failures/failovers
+  * Use things learned from tim bray experiment to make writing faster
+  * 
+
+= DONE TO DATE =
+ 
+  * Proper Erlang directory structure
+  * Proper Erlang application, with a supervisor
+  * Decoding of GTP' and all IEs from 0 up to version 2 (release 8 spec). 
+  * UDP daemon listener
+  * Logging server which is sequence number aware
+  * Listener tied to decode, tied to logging server
