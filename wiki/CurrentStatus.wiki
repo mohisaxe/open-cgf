@@ -12,8 +12,8 @@ This server will eventually be production grade, but I wouldn't recommend it for
 
 Things to do rough priority order
 
+  * Write unit tests for encode/decode
   * Make logging server log to disk
-  * Make server reply to echo and node_alive requests
   * Make logging multi-process 
   * Make server respond to CDF (SGSN/GGSN) with data_record_transfer_response periodically, which should make it very efficient. Response should be tied to physical disk logging or file closing (TBD)
   * Make TCP server work, for GTPv0 clients who like TCP. Sad little things.
@@ -21,7 +21,7 @@ Things to do rough priority order
   * Enhance test program to simulate failures/failovers
   * Exercise and debug failures/failovers
   * Use things learned from tim bray experiment to make writing faster
-  * 
+  * Make it optionally log in TS 32.297 CDR file format, although I'm not sure anyone uses it.
 
 = DONE TO DATE =
  
@@ -31,3 +31,4 @@ Things to do rough priority order
   * UDP daemon listener
   * Logging server which is sequence number aware
   * Listener tied to decode, tied to logging server
+  * Make server reply to echo and node_alive requests
