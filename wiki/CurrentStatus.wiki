@@ -32,3 +32,5 @@ Things to do rough priority order
   * Make logging server log to disk
   * Make logging multi-process 
   * Make server respond to CDF (SGSN/GGSN) with data_record_transfer_response periodically, which should make it very efficient. Response is tied to physical disk logging and successful file closure.
+  * Auto-version fallback on version_not_supported messages. Configurable starting version.
+  * Support for GTP' v0 20-byte header.
