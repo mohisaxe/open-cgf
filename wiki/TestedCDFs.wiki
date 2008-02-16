@@ -6,10 +6,9 @@ The following are based on user reports and traces, this software will require t
 
 = CDF List =
 
-== Cisco IP Transfer Point ==
+== Cisco IP Transfer Point (ITP) ==
 Cisco ITPs need to log CDRs when used in SMSC-bypass configuration that delivers directly to phones or to an third-paty using [http://en.wikipedia.org/wiki/SMPP SMPP]. They have a not-terribly-well-documented GTP' interface that appears to be completely differently to the Cisco GGSN GTP' interface. It is a lot less configurable.
 
 open-cgf has had some initial successful testing with the Cisco ITP (thanks to Ilya!). It uses a the GTPv0 6 byte header version of GTP'.
 
 *Your help is needed. Please comment below or raise an [http://code.google.com/p/open-cgf/issues/list Issue]*
-
