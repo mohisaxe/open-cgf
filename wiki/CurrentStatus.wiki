@@ -2,11 +2,11 @@
 
 = Introduction =
 
-As at Feb 2008 this project is under active development. It requires testing with real live CDFs (SGSN/GGSNs) and I cannot do this.
+As at Feb 2008 this project is under active development. It is currently being tested with at least one real live CDFs (SGSN/GGSNs/etc).
 
-If you'd like to use this in your (test) network, please do so, and send any questions or feedback to feedback@3gtelcotools.com or raise an issue here.
+If you'd like to use this in your (test) network, please do so and send any questions or feedback to feedback@3gtelcotools.com or raise an issue here.
 
-This server will eventually be production grade, but I wouldn't recommend it for that yet...
+This server is feature complete but requires testing before it can be labeled production grade.
 
 = TODO =
 
@@ -34,3 +34,5 @@ Things to do rough priority order
   * Make server respond to CDF (SGSN/GGSN) with data_record_transfer_response periodically, which should make it very efficient. Response is tied to physical disk logging and successful file closure.
   * Auto-version fallback on version_not_supported messages. Configurable starting version.
   * Support for GTP' v0 20-byte header.
+  * Redirects CDFs when disabling/shutting down
+  * Detects and ignores duplicates as per 3GPP TS 32.295
