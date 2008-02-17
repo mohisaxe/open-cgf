@@ -1,4 +1,5 @@
 #summary Status of Project
+#labels Featured
 
 = Introduction =
 
