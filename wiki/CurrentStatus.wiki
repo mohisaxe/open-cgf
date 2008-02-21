@@ -5,8 +5,6 @@
 
 As at Feb 2008 this project is under active development. It is currently being tested with at least one real live CDFs (SGSN/GGSNs/etc).
 
-*It currently requires Erlang R12B-0 or later*
-
 If you'd like to use this in your (test) network, please do so and send any questions or feedback to feedback@3gtelcotools.com or raise an issue here.
 
 This server is feature complete but requires testing before it can be labeled production grade.
