@@ -13,7 +13,10 @@ Run an erlang shell {{{ erl }}}
 To perform a little torture test (duplicates, possible duplicates) use:
 `test_udp_client:start_mockup( {{65,23,156,215}, 3386}).`
 
-To replay an hardcoded packet from a GGSN
+To replay an hardcoded packet (twice) from a GGSN
 `test_udp_client:start_replay( {{65,23,156,215}, 3386},2).`
+
+To replay several hardcoded packets (echo response, GGSN CDR, additions welcome)
+`test_udp_client:replay_real( {{65,23,156,215}, 3386}).`
 
 The open-cgf server IP address e.g. _{65,23,156,215}_ and port e.g. _3386_ will obviously need to be adjusted for your specific site.
