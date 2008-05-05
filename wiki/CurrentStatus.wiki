@@ -38,3 +38,4 @@ Things to do rough priority order
   * Redirects CDFs when disabling/shutting down
   * Detects and ignores duplicates as per 3GPP TS 32.295
   * Proper startup script w/ability to run as daemon and shut it down from command line
+  * Syslogs (via UDP) to localhost:514. You must allow your syslog daemon to accept remote syslogs for this to work.
