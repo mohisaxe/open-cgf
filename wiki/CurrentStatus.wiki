@@ -3,7 +3,7 @@
 
 = Introduction =
 
-As at May 2008 this project is under active development. It is currently being tested with at least one real live CDFs (SGSN/GGSNs/etc).
+As at May 2008 this project is under active development. It is currently being tested with at least one real live CDFs (SGSN/GGSNs/etc). Details of the compliance will be released once testing is complete.
 
 If you'd like to use this in your (test) network, please do so and send any questions or feedback to feedback@3gtelcotools.com or raise an issue here. [http://www.3gtelcotools.com/3GPP/charging_gateway_function_cgf.html You can download a release tarball of open-cgf from here.]
 
@@ -39,3 +39,5 @@ Things to do rough priority order
   * Detects and ignores duplicates as per 3GPP TS 32.295
   * Proper startup script w/ability to run as daemon and shut it down from command line
   * Syslogs (via UDP) to localhost:514. You must allow your syslog daemon to accept remote syslogs for this to work.
+  * Added configuration for the syslog
+  * Added the ability to run an OS command asynchronously every time a CDR file is closed.
