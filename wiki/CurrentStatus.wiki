@@ -41,3 +41,5 @@ Things to do rough priority order
   * Syslogs (via UDP) to localhost:514. You must allow your syslog daemon to accept remote syslogs for this to work.
   * Added configuration for the syslog
   * Added the ability to run an OS command asynchronously every time a CDR file is closed.
+  * Added .cdr extension to filename
+  * Added logfile option
