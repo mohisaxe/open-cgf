@@ -13,6 +13,7 @@ This server is feature complete but requires testing before it can be labelled p
 
 Things to do rough priority order
 
+  * Fix integration issues around sequence numbers and reuse. COMING SOON.
   * Write unit tests for encode/decode
   * Make TCP server work, for GTP' clients who like TCP. Sad little things.
   * Enhance test program for TCP
