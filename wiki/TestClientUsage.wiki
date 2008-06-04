@@ -3,20 +3,14 @@
 
 = Introduction =
 
-This page tells you how to use the test client included in the package. The test client is...rather rudimentary at the moment. It only sends UDP packets and does not monitor the response.
+This page tells you how to use the test client included in the package. The test client is still under development but includes UDP and TCP tests. 
 
 
 = Details =
 
 Run an erlang shell {{{ erl }}}
 
-To perform a little torture test (duplicates, possible duplicates) use:
-`test_udp_client:start_mockup( {{65,23,156,215}, 3386}).`
+To perform a little test (duplicates, possible duplicates) use:
+'test_udp:simple_test({{65,23,156,214},3386},{{65,23,156,215}, 3386})'
 
-To replay an hardcoded packet (twice) from a GGSN
-`test_udp_client:start_replay( {{65,23,156,215}, 3386},2).`
-
-To replay several hardcoded packets (echo response, GGSN CDR, additions welcome)
-`test_udp_client:replay_real( {{65,23,156,215}, 3386}).`
-
-The open-cgf server IP address e.g. _{65,23,156,215}_ and port e.g. _3386_ will obviously need to be adjusted for your specific site.
+The local source address and port e.g. _{{65,23,156,214},3386}_  and CGF (open-cgf) server IP address and port e.g. _{{65,23,156,215}, 3386})_ need to be adjusted for your specific site.
